@@ -1,8 +1,42 @@
-﻿div.header h1:hover {
-    color:red;
+﻿
+/*Animatie*/
+@keyframes button-menu {
+    from {background-color: #B71C1C;
+          color: white;
+        }
+    to {background-color: #FFEBEE;
+        color: black;
 
+        }
+    }
 
+/*CSS Styles*/
+* {
+    font-family: 'Roboto', sans-serif;
 }
-div.header {
-    background-color: aqua
+
+div.menu-top {
+    background-color: #B71C1C;
+    border-style: hidden; 
+    float: left;
+    width: auto;
+    color: white;
+    position: fixed;
+}
+
+div.menu-top ul {
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+div.menu-top ul li:hover {
+    background-color: #FFEBEE;
+    color: black;
+    animation-name: button-menu;
+    animation-duration: 1s;
+     
+}
+
+div.main {
+    margin-left: 150px ;
 }
