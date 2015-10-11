@@ -6,7 +6,7 @@
         }
     to {background-color: #FFEBEE;
         color: black;
-
+        box-shadow: 0 2px 2px black;
         }
     }
 
@@ -27,11 +27,13 @@ div.menu-top {
 div.menu-top ul {
     list-style-type: none;
     margin-right: 50px;
+    overflow: hidden;
 }
 
 div.menu-top ul li:hover {
     background-color: #FFEBEE;
     color: black;
+    width: 60px;
     animation-name: button-menu;
     animation-duration: 1s;
      
