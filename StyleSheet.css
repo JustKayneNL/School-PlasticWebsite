@@ -15,6 +15,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background: url("http://orig11.deviantart.net/20eb/f/2015/030/6/f/_minflat__dark_material_design_wallpaper__4k__by_dakoder-d8fjqzu.jpg");
+}
+
 div.menu-top {
     background-color: #B71C1C;
     border-style: hidden; 
@@ -41,4 +45,11 @@ div.menu-top ul li:hover {
 
 div.main {
     margin-left: 150px ;
+}
+
+.paragraph {
+    background-color: #B71C1C;
+    padding: 5px 5px 5px 5px;
+    color: white;
+    margin-bottom: 10px;
 }
