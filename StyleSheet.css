@@ -2,20 +2,21 @@
 /*Animatie*/
 @keyframes button-menu {
     0% {
-        background-color: #B71C1C;
-          color: white;
+        color: white;
         }
     50% {
         background-color: #FFEBEE;
         color: black;
         }
     100%{
-        background-color: #B71C1C;
-          color: white;
+        background-color: initial;
+        color: white;
     }
     }
 
 /*CSS Styles*/
+
+    /*Main Body*/
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -25,43 +26,83 @@ body {
     background-attachment: fixed;
 }
 
-div.menu-top {
-    background-color: #B71C1C;
-    border-style: hidden; 
+    /*Menu*/
+div.menu {
+    background-color: #C62828;
     float: left;
     width: auto;
-    color: white;
     position: fixed;
+    margin-top: 65px;
 }
 
-div.menu-top ul {
-    list-style: none;
+div.menu ul  {
+    list-style-type: none;
 }
-div.menu-top ul a {
-    list-style: none;
+
+div.menu ul li a {
     margin-right: 50px;
-    overflow: hidden;
-    color: white;
     text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 
-div.menu-top a:hover {
-    width: 60px; 
+div.menu ul li a:hover {
+    color: black;
+    animation-name: button-menu;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;      
+}
+
+    /*nav-bar*/
+div.nav-bar {
+   margin: 0; 
+   background: #E53935;
+   padding-bottom: 15px;
+   padding-top: 15px; 
+   width: 100%; 
+   text-align: center;
+   margin-bottom: 10px;
+   position: fixed;
+   left: 0px;
+   top: 0px;
+
+ 
+   
+}
+
+div.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 0%;
+    overflow: hidden;
+}
+
+div.nav-bar ul li {
+    float: left;
+}
+
+div.nav-bar ul li a {
+    display: block;
+    width: 100px;
+    padding: 5px 0 5px 0;
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+div.nav-bar ul li a:hover {
     animation-name: button-menu;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    color: black;
-      
 }
-/*
-div.menu-top ul li:hover {
-    background-color: #FFEBEE;
-    color: black;
-   width: 60px;    
-}
-*/
+
+
+    /*Text and information*/
 div.main {
-    margin-left: 150px ;
+    margin-left: 165px;
+    padding-top: 65px;
 }
 
 .paragraph {
